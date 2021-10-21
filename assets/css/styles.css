@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.bg-natural {
+  background-color: #f1efe2;
+}
+
+.navbar-brand img {
+  width: 72px;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand img {
+    width: 160px;
+  }
+}
+
+.navbar-nav.ms-auto .nav-link {
+  color: #384751;
+}
+
+@media (min-width: 375px) {
+  .pad-desc {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pad-desc {
+    padding: 69px 125px;
+  }
+}
+
+.oprah-description {
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 78px;
+}
+
+@media (min-width: 992px) {
+  .oprah-description {
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 78px;
+  }
+}
+
+.separator {
+  width: 41px;
+  height: 1px;
+  background: #384751;
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  .separator {
+    width: 71px;
+    height: 1px;
+    background: #384751;
+    display: inline-flex;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.contact-button {
+  display: flex;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  justify-content: center;
+  color: #384751;
+  font-weight: bold;
+  font-family: "Avenir LT Std";
+  font-size: 26px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #384751;
+  color: #f1efe2;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}
+
+.notop {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.border-lines {
+  border-color: #384751;
+  border: 2px solid;
+}
+
+@media (min-width: 992px) {
+  .notop {
+    border-top: none;
+  }
+}
+
+.noleft {
+  border-left: 2px solid #384751;
+}
+
+@media (min-width: 992px) {
+  .noleft {
+    border-left: none;
+  }
+}
+
+.border-right {
+  border-right: none;
+}
+
+@media (min-width: 992px) {
+  .border-right {
+    border-right: 2px solid #384751;
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.elipse {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: -10px;
+}
+
+@media (min-width: 992px) {
+  .elipse {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -22px;
+  }
+}
+
+.bg-grey {
+  background-color: #384751;
+}
+
+.bg-stars {
+  background-image: url("../img/bg-stars.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-cards h3 {
+  font-family: "NewYork";
+  font-size: 70px;
+  line-height: 68px;
+  margin: 0;
+}
+
+.services-cards hr {
+  margin: 1rem 0 0.5rem;
+}
+
+.services-cards h4 {
+  font-family: "Avenir LT Std";
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.portfolio h4 {
+  font-family: "Avenir LT Std";
+  font-size: 18px;
+  line-height: 28px;
+}
