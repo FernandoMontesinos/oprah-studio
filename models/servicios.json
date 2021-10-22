@@ -1,0 +1,27 @@
+[
+    {
+        "id": "01",
+        "nombre": "COMMUNITY MANAGER",
+        "imagen": "pexels-picjumbocom-196645 1.png"
+    },
+    {
+        "id": "02",
+        "nombre": "BRANDING",
+        "imagen": "pexels-picjumbocom-196645 1.png"
+    },
+    {
+        "id": "03",
+        "nombre": "CONTENT CREATOR",
+        "imagen": "pexels-picjumbocom-196645 1.png"
+    },
+    {
+        "id": "04",
+        "nombre": "DIGITAL MARKETING",
+        "imagen": "pexels-picjumbocom-196645 1.png"
+    },
+    {
+        "id": "05",
+        "nombre": "WEB DEVELOPMENT",
+        "imagen": "pexels-picjumbocom-196645 1.png"
+    }
+]

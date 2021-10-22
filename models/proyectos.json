@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nombre": "NUEVO PRIMER TITULO",
+        "detalle": "CONTENT CREATOR + COMMUNITY MANAGER",
+        "imagen": "sigmund-4UGmm3WRUoQ-unsplash.png",
+        "fecha": "SEPT 21",
+        "descripcion": "texto aquí"
+    },
+    {
+        "id": 2,
+        "nombre": "NOMBRE DE PROYECTO 2",
+        "detalle": "CONTENT CREATOR + COMMUNITY MANAGER",
+        "imagen": "sigmund-4UGmm3WRUoQ-unsplash.png",
+        "fecha": "SEPT 21",
+        "descripcion": "texto aquí"
+    },
+    {
+        "id": 3,
+        "nombre": "NOMBRE DE PROYECTO 3",
+        "detalle": "CONTENT CREATOR + COMMUNITY MANAGER",
+        "imagen": "sigmund-4UGmm3WRUoQ-unsplash.png",
+        "fecha": "SEPT 21",
+        "descripcion": "texto aquí"
+    },
+    {
+        "id": 4,
+        "nombre": "OTRO PROYECTO NUEVO, UN POCO MÁS",
+        "detalle": "SEGUNDA DESCRIPCIÓN",
+        "imagen": "sigmund-4UGmm3WRUoQ-unsplash.png",
+        "fecha": "SEPT 21",
+        "descripcion": "texto aquí"
+    }
+]
