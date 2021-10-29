@@ -4,151 +4,113 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: var(--natural);
+}
+
+/* Navbar */
 .navbar-light .navbar-toggler {
   border: none;
 }
-
 .bg-natural {
-  background-color: #f1efe2;
+  background-color: var(--natural);
 }
-
+.navbar{
+  height: 154px;
+}
 .navbar-brand img {
-  width: 72px;
+  width: 160px;
+  height: 72px;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
 }
-
-@media (min-width: 992px) {
-  .navbar-brand img {
-    width: 160px;
-  }
-}
-
 .navbar-nav.ms-auto .nav-link {
-  color: #384751;
+  color: var(--gris);
+  font-family: 'Avenir-Book';
+  padding: 1.6rem 0 0 3rem;
+  font-size: 20px;
+}
+.nav-link:hover{
+  text-decoration: underline;
+}
+.navbar-light .navbar-toggler-icon {
+  transform: scaleX(1.8);
 }
 
-@media (min-width: 375px) {
-  .pad-desc {
-    padding: 2rem;
-  }
-}
 
-@media (min-width: 992px) {
-  .pad-desc {
-    padding: 69px 125px;
-  }
-}
-
+/* Presentación */
 .oprah-description {
+  font-family: 'Avenir-Book';
+  font-weight: 300;
+  color: var(--gris);
   text-transform: uppercase;
-  font-size: 19px;
-  line-height: 78px;
+  font-size: 2.2vw;
+  line-height: 5.4vw;
+  padding-right: 4rem;
+  margin: 6vw 8.5vw;
+  box-sizing: border-box;
 }
-
-@media (min-width: 992px) {
-  .oprah-description {
-    text-transform: uppercase;
-    font-size: 35px;
-    line-height: 78px;
-  }
+.circle-text{
+  background-image: url(/assets/img/Ellipse\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }
-
+.pad-desc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notop{
+  background-image: url(/assets/img/img-01-hero-desk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  border: none;
+  border-right: 1px solid var(--gris);
+}
+.notop-2{
+  background-image: url(/assets/img/img-05-contacto.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  border: none;
+  border-right: 1px solid var(--gris);
+  font-size: 2.2vw;
+  line-height: 5.4vw;
+}
 .separator {
   width: 41px;
   height: 1px;
-  background: #384751;
+  background: var(--gris);
   display: inline-flex;
   margin-bottom: 0.75rem;
 }
-
-@media (min-width: 992px) {
-  .separator {
-    width: 71px;
-    height: 1px;
-    background: #384751;
-    display: inline-flex;
-    margin-bottom: 0.75rem;
-  }
-}
-
 .contact-button {
-  display: flex;
+  height: 105px;
   width: 100%;
-  height: auto;
   text-decoration: none;
-  justify-content: center;
-  color: #384751;
   font-weight: bold;
-  font-family: "Avenir LT Std";
-  font-size: 26px;
+  color: var(--gris);
+  font-family: "Avenir-Bold";
+  font-size: 27px;
+  letter-spacing: 0.1em;
   transition: all 0.5s ease-in-out;
+  border: 1px solid var(--gris);
+  border-left: 0;
 }
-
 .contact-button:hover {
-  background-color: #384751;
+  background-color: var(--gris);
   color: #f1efe2;
 }
-
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1400px;
-  }
-}
-
-.notop {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-
 .border-lines {
-  border-color: #384751;
-  border: 2px solid;
+  border-color: var(--gris);
+  border: 1px solid;
 }
 
-@media (min-width: 992px) {
-  .notop {
-    border-top: none;
-  }
-}
-
-.noleft {
-  border-left: 2px solid #384751;
-}
-
-@media (min-width: 992px) {
-  .noleft {
-    border-left: none;
-  }
-}
-
-.border-right {
-  border-right: none;
-}
-
-@media (min-width: 992px) {
-  .border-right {
-    border-right: 2px solid #384751;
-  }
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .elipse {
   position: absolute;
@@ -157,26 +119,65 @@
   top: -10px;
 }
 
-@media (min-width: 992px) {
-  .elipse {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: -22px;
-  }
-}
-
+/* About Us */
 .bg-grey {
-  background-color: #384751;
+  background-color: var(--gris);
 }
-
 .bg-stars {
   background-image: url("../img/bg-stars.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -2px;
+}
+.img-fluid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.btn-trabajemos{
+  width: 472px;
+  height: 105px;
+  font-size: 27px;
+  font-family: 'Avenir-Black';
+  color: var(--natural);
+  border: 1px solid var(--natural);
+  margin-top: 1rem;
+  letter-spacing: .1rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+.btn-trabajemos:hover{
+  background-color: var(--natural);
+  color: var(--gris);
+  border: 1px solid var(--gris);
+}
+.about-container{
+  padding: 10vw 8vw;
+  overflow: hidden;
+}
+.about-container h3{
+  margin-bottom: 2rem !important;
+}
+.trabajemos-container{
+  padding: 5rem 0 !important;
+  border-bottom: 1px solid var(--natural);
 }
 
+
+/* Services */
+#servicios{
+  color: var(--gris);
+}
+#servicios h3.titulo{
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+#servicios .item img{
+  height: 234px;
+}
 .services-cards h3 {
   font-family: "NewYork";
   font-size: 70px;
@@ -189,14 +190,189 @@
 }
 
 .services-cards h4 {
-  font-family: "Avenir LT Std";
+  font-family: "Avenir-Book";
   font-size: 27px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
+/* Trabajos */
+#trabajos{
+  color: var(--gris);
+}
+#trabajos .titulo-intermedio {
+  font-family: "Avenir-Book";
+  font-size: 27px;
+  text-align: center;
+  line-height: 35px;
+  width: 462px;
+}
 .portfolio h4 {
-  font-family: "Avenir LT Std";
+  font-family: "Avenir-Book";
   font-size: 18px;
   line-height: 28px;
+  margin-bottom: -.5rem;
+}
+.portfolio h4 b{
+  font-family: "Avenir-Black";
+}
+.text-end{
+  color: var(--gris);
+}
+#trabajos{
+  margin-bottom: 4rem;
+}
+
+/* Carousel */
+.owl-nav{
+  position: relative;
+  height: 0;
+  background-color: teal;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.owl-nav button{
+  position: absolute;
+  font-size: 58px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+.owl-nav button span{
+  font-family: 'NewYork';
+  padding: 0 .5rem;
+}
+#servicios .pad-serv h4{
+  font-size: 27px;
+}
+.owl-nav .owl-prev{
+  left: 0;
+}
+.owl-nav .owl-next{
+  right: 0;
+}
+.owl-nav button:hover{
+  background-color: rgba(0,0,0,0.05) !important;
+  color: var(--gris) !important;
+}
+
+/* Listo */
+#listo h2{
+  margin-bottom: 1rem !important;
+}
+.btn-trabajemos.contacto{
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+
+/* Footer */
+#footer-mobile{
+  display: none;
+}
+.container-fredes{
+  height: 348px;
+}
+a.btn-fredes{
+  font-family: 'Avenir-Book', 'Arial';
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--natural);
+  text-decoration: none;
+  height: 45px;
+  padding-left: 3rem;
+  background-repeat: no-repeat;
+  background-size: 24px auto;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+}
+a.btn-fredes.mail{
+  background-image: url(/assets/img/mail-info.png);
+}
+a.btn-fredes.tel{
+  background-image: url(/assets/img/tel-info.png);
+}
+a.btn-fredes.insta{
+  background-image: url(/assets/img/ig-info.png);
+}
+.container-fcontact{
+  border: 1px solid var(--natural);
+  border-top: none;
+  border-bottom: none;
+  height: 348px;
+}
+.container-flogo{
+  height: 348px;
+}
+
+button.boton-icon{
+  border: none;
+  height: 43px;
+  width: 43px;
+  border-radius: 100%;
+  text-decoration: none;
+  background-image: url(/assets/img/instagram-boton.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: .8rem;
+  margin-top: 1rem;
+}
+button.boton-icon.instagram{
+  background-image: url(/assets/img/instagram-boton.png);
+}
+button.boton-icon.facebook{
+  background-image: url(/assets/img/facebook-boton.png);
+}
+button.boton-icon.pinterest{
+  background-image: url(/assets/img/pinterest-boton.png);
+}
+
+/*Contacto*/
+
+.contenedor-input{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  width: 80%;
+}
+
+.input-contacto{
+   margin: 2.5rem 0rem;
+   border: none;
+   background-color: #F1EFE2;
+   outline: none;
+   border-bottom: 1px solid #384751;
+   padding-bottom: .5rem;
+   font-family: 'Avenir-Book';
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: #384751;
+}
+
+.input-contacto::placeholder{
+  font-family: 'Avenir-Book';
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: #384751;
+}
+
+.label-contacto{
+  margin: -2rem 0 2rem 0;
+  font-family: 'Avenir-Book';
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-align: left;
+}
+
+.contenedor-gracias{
+  padding: 4rem; 
+  border-bottom: 1px solid #F1EFE2;
 }

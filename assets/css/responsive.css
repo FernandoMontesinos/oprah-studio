@@ -1,0 +1,219 @@
+@media (max-width: 1200px) {
+    .imagenes-behind{
+        display: none;
+    }
+    #listo h2{
+        font-size: 40px !important;
+    }
+    #listo h3{
+       font-size: 60px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse{
+        margin: 1rem 0 0 .5rem;
+    }
+    .card-serv{
+        margin-bottom: 1rem;
+    }
+    .navbar{
+        min-height: 64px;
+        height: auto;
+    }
+    a.nav-link{
+        padding: .5rem 0 .5rem 0 !important;
+    }
+    .navbar-brand img{
+        width: 72px;
+        height: 32px;
+        margin-top: 0;
+    }
+    .notop{
+        height: 141px;
+        background-image: url(/assets/img/img-01-hero.png) !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid var(--gris);
+    }
+    .oprah-description{
+        font-size: 19px;
+        line-height: 53px;
+        padding-right: 5vw;
+        width: 330px;
+    }
+    .contact-button {
+        height: 55px;
+        font-size: 17px;
+        border: 1px solid var(--gris) !important;
+    }
+    .parrafo-behind{
+        padding: 0 !important;
+    }
+    .parrafo-behind h2{
+        font-size: 50px !important;
+        line-height: 48px !important;
+        width: 100px;
+        margin-bottom: 2.75rem !important;
+    }
+    .parrafo-behind h3{
+        display: none;
+    }
+    .parrafo-behind h3.mobile{
+        display: block !important;
+        font-size: 20px !important;
+        line-height: 27px !important;
+        margin-bottom: 0px !important;
+        margin-top: 1.5rem !important;
+    }
+    .w-75{
+        width: 100% !important;
+    }
+    .w-75 p{
+        font-size: 20px !important;
+        line-height: 25px;
+    }
+    .p-5{
+        overflow: hidden;
+    }
+    .image-star1{
+        bottom: auto !important;
+        left: auto !important;
+        top: 5%;
+        right: -5%;
+        height: 230px;
+        width: 230px;
+    }
+    .bg-stars{
+        border-top: 0 !important;
+    }
+    .trabajemos-container{
+        border: none !important;
+    }
+    .trabajemos-container h2{
+        font-size: 29px !important;
+        line-height: 40px;
+        margin: 0 !important;
+    }
+    .trabajemos-container h3{
+        font-size: 35px !important;
+        line-height: 40px;
+        margin: 0 !important;
+        margin-top: -1rem !important;
+    }
+    .trabajemos-container{
+        position: relative;
+        padding: 0 0 70px 0 !important;
+    }
+    .trabajemos-container .py-5{
+        padding: 1.5rem 0 3rem 0 !important;
+    }
+    .btn-trabajemos{
+        position: absolute;
+        bottom: 0;
+        width: 100% !important;
+        height: 55px;
+        font-size: 17px;
+    }
+    #trabajos{
+        margin-bottom: 1rem;
+    }
+    .img-flecha{
+        display: none !important;
+    }
+    .btn-trabajemos.contacto{
+        position: relative;
+    }
+    #listo .trabajemos-container{
+        padding: 0 !important;
+    }
+    #listo .py-5{
+        padding: 3rem 0 !important;
+    }
+    #footer-pc{
+        display: none;
+    }
+    #footer-mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .p-5{
+        padding: 1.5rem !important;
+    }
+    #servicios .owl-nav button{
+        top: -8.6rem;
+    }
+    #trabajos .img-fluid{
+        height: 165px;
+    }
+    #trabajos .owl-nav button{
+        top: -12.3rem;
+    }
+    #trabajos .owl-nav button span{
+        font-size: 6.9rem;
+    }
+    #listo h2{
+        font-size: 20px !important;
+        margin-bottom: .25rem !important;
+    }
+    #listo h3{
+        font-size: 27px !important;
+    }
+    .pad-serv h4{
+        font-size: 20px !important;
+        height: 35px;
+    }
+    .item h4{
+        font-size: 13px !important;
+        line-height: 18px;
+    }
+    
+    #servicios .item img{
+        height: 110px;
+    }
+    #servicios h3{
+        font-size: 50px !important;
+    }
+    #servicios h3.titulo{
+        margin-bottom: 2rem !important;
+        margin-top: 0rem !important;
+    }
+    #servicios .pad-serv{
+        padding: 0 3.8rem;
+    }
+    .services-cards hr{
+        margin: 0.5rem 0;
+    }
+    #trabajos .py-5{
+        padding-top: 0rem !important;
+    }
+    #trabajos .pt-5{
+        padding-top: 1rem !important;
+    }
+    .hr1{
+        display: none;
+    }
+    .titulo-intermedio{
+        font-size: 14px !important;
+        margin-bottom: -.5rem;
+        width: 242px !important;
+        margin-bottom: 1rem;
+    }
+    .about-container{
+        padding: 2rem 1rem;
+    }
+    .container{
+        padding: 0 1rem !important;
+    }
+    .contenedor-input{
+        margin: 2rem;
+    }
+    .contenedor-gracias{
+        padding: 3rem !important;
+    }
+}
