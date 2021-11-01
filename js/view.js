@@ -120,4 +120,7 @@ class View {
         });
         $(app).append(render('listo'));
     }
+    renderTrabajo(app, envTrabajo) {
+        $(app).append(render('trabajo', envTrabajo));
+    }
 }

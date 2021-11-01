@@ -139,6 +139,17 @@
     #footer-mobile{
         display: block;
     }
+    .notop-2{
+        border-right: 0 !important;
+        background-size: cover;
+    }
+    .notop-2 h3{
+        color: var(--natural) !important;
+        -webkit-text-stroke: 1px black;
+    }
+    .contenedor-input{
+        margin: 2rem 0 4rem 0 !important;
+    }
 }
 
 @media (max-width: 576px) {

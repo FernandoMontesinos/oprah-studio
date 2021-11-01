@@ -3,7 +3,7 @@ const ErrorComponent = (padre) => {
     $(padre).html("<div class='error404'><div><h1>Error 404</h1><br><span>La página que estás buscando no existe :(</span></div></div>");
 }
 
-const app = new Controller(new Model(), new View());
+const app = new Controller(new View());
 
 //ROUTER
 const routes = [
@@ -12,7 +12,7 @@ const routes = [
     { path: '/about-us', action: 'About Us' },
     { path: '/servicios', action: 'Servicios' },
     { path: '/contacto', action: 'Contacto' },
-    { path: '/proyecto', action: 'Proyecto' },
+    { path: '/trabajo', action: 'Trabajo' },
 ]
 
 //OBTENER URL
@@ -45,8 +45,8 @@ const router = () => {
         case 'Contacto':
             app.Contacto("#app");
             break;
-        case 'Proyecto':
-            app.Producto("#app", varData);
+        case 'Trabajo':
+            app.Trabajo("#app", varData);
             break;
         default:
             ErrorComponent("#app");

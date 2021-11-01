@@ -59,30 +59,29 @@ const render = (tipo, data) => {
            <section id="contacto bg-natural">
            <div class="row g-0 bg-natural">
            <div class="col-12 col-md-5 notop-2">
-           <h3 style="font-family: Georgia; font-style: italic; color: #384751; font-size: 93px; text-align:center; display: flex; justify-content:start; margin-left: 30%; margin-top: 2rem" >
-                                Let's
-           </h3>
-           <h3 style="font-family: Georgia; font-style: italic; color: #384751; font-size: 93px; display: flex; justify-content:end; margin-right: 30%;">talk!</h3>
+           <h3 style="font-family: Georgia; font-style: italic; color: #384751; font-size: 93px; text-align:center; margin-right: 7vw; margin-top: 2rem" >Let’s</h3>
+           <h3 style="font-family: Georgia; font-style: italic; color: #384751; font-size: 93px; text-align: center; margin-left: 8vw; margin-top: -2.3rem;">talk!</h3>
            </div>
            <div class="col-12 col-md-7">
                <div class="row g-0" style="max-width: 100%">
-               <div class="col-12 pad-desc border-bottom-0">
-               
-                <div class="contenedor-input" > 
-                <input type="text" class="input-contacto" id="nombre-contacto" placeholder="Nombre completo - un gusto conocerte!">
-                <label class="label-contacto" for="nombre-contacto">NOMBRE</label>
-                <input type="text" class="input-contacto" id="proyecto-contacto" placeholder="El nombre de tu proyecto a realizar">
-                <label class="label-contacto" for="proyecto-contacto">TU PROYECTO</label>
-                <input type="text" class="input-contacto" id="mail-contacto" placeholder="El mail al que recibirás la respuesta">
-                <label class="label-contacto" for="mail-contacto">MAIL</label>
-                <input type="text" class="input-contacto" id="servicio-contacto" placeholder="Servicio en el que estes interesad@ y detalles del proyecto.">
-                <label class="label-contacto" for="servicio-contacto">MENSAJE</label>
-                
-                </div>    
-               </div>
-               <div class="col-12">
-                   <a class="text-uppercase contact-button d-flex justify-content-center align-items-center border-bottom-0" href="#">Enviar</a>
-               </div>
+                    <form id="form-contacto" type="POST">
+                    <div class="col-12 pad-desc border-bottom-0">
+                        <div class="contenedor-input">
+                            <input type="text" name="nombre" class="input-contacto" id="nombre-contacto" placeholder="Nombre completo - un gusto conocerte!">
+                            <label class="label-contacto" for="nombre-contacto">NOMBRE</label>
+                            <input type="text" name="proyecto" class="input-contacto" id="proyecto-contacto" placeholder="El nombre de tu proyecto a realizar">
+                            <label class="label-contacto" for="proyecto-contacto">TU PROYECTO</label>
+                            <input type="email" name="email" class="input-contacto" id="mail-contacto" placeholder="El mail al que recibirás la respuesta">
+                            <label class="label-contacto" for="mail-contacto">MAIL</label>
+                            <input type="text" name="mensaje" class="input-contacto" id="servicio-contacto" placeholder="Servicio en el que estes interesad@ y detalles del proyecto.">
+                            <label class="label-contacto" for="servicio-contacto">MENSAJE</label>
+                        </div>    
+                    </div>
+                    <div class="col-12">
+                        <h5 class="respuesta-form" style="color: var(--gris); text-align:center; height: 1.8rem;"></h5>
+                        <button type="submit" class="text-uppercase contact-button d-flex justify-content-center align-items-center">Enviar</button>
+                    </div>
+                    </form>
                </div>
            </div>
            </div>
@@ -91,11 +90,14 @@ const render = (tipo, data) => {
         break;
         case 'gracias': 
            return `
-           <section id="gracias" class="bg-grey">
+           <section id="gracias" class="bg-grey" style="display: none;">
            <div class="container-fluid" style="padding: 0;">
                <div class="col-12 d-flex justify-content-center contenedor-gracias">
-               <h3 style="font-family: Georgia; font-style: italic; color: #f1efe2; font-size: 68px; ">
-               ¡Gracias! </h3>
+                    <div style="width: 100%;">
+                    <h3 style="font-family: Georgia; font-style: italic; color: #f1efe2; font-size: 68px; text-align: center; ">
+                    ¡Gracias!</h3>
+                    <div class="mensaje"></div>
+                    </div>
                </div>
                </div>
            </div>
@@ -157,7 +159,7 @@ const render = (tipo, data) => {
                         <h3 style="font-family: Georgia; font-style: italic; color: #f1efe2; font-size: 73px; margin-top: -2rem; margin-bottom: 1rem;">
                             nuestras manos
                         </h3>
-                        <a class="btn-trabajemos d-flex justify-content-center align-items-center text-decoration-none text-uppercase" href="#">
+                        <a class="btn-trabajemos d-flex justify-content-center align-items-center text-decoration-none text-uppercase" href="/#/servicios">
                         trabajemos junt@s
                         </a>
                         </div>
@@ -241,7 +243,7 @@ const render = (tipo, data) => {
                                 <div class="item">
                                     <div class="row">
                                         <div class="col-12">
-                                        <h4>
+                                        <h4 style="text-transform: uppercase;">
                                             <b>${item.nombre}</b> || ${item.detalle}
                                         </h4>
                                         </div>
@@ -256,7 +258,7 @@ const render = (tipo, data) => {
                                         <div class="col-12">
                                         <div class="row" style="margin-top: .5rem">
                                             <div class="col-6"><span>${item.fecha}</span></div>
-                                            <a class="col-6 text-end" href="#trabajo?id=${item.id}"><b>VER MÁS</b></a>
+                                            <a class="col-6 text-end" href="/#/trabajo?id=${item.id}"><b>VER MÁS</b></a>
                                         </div>
                                         </div>
                                     </div>
@@ -268,7 +270,6 @@ const render = (tipo, data) => {
                     </div>
                 </div>
             </section>`;
-            console.log(data);
             return `${inicioTrabajos} ${listaTrabajos} ${finalTrabajos}`;
             break;
         case 'listo':
@@ -324,7 +325,7 @@ const render = (tipo, data) => {
                         </div>
                         <div class="col-md-3 col-lg-4 d-flex justify-content-center align-items-center container-flogo">
                             <div>
-                            <img src="assets/img/LOGO-ALTERNATIVO.PNG" style="width: 160px; height: 174px;" />
+                            <img src="assets/img/logo-oprah-alt.png" style="width: 160px; height: 174px;" />
                             </div>
                         </div>
                     </div>
@@ -346,7 +347,7 @@ const render = (tipo, data) => {
 
                             <div class="col-4 d-flex justify-content-center align-items-center" style="border-bottom: 1px solid var(--natural);">
                                 <div>
-                                <img src="assets/img/LOGO-ALTERNATIVO.PNG" style="width: 88px; height: 96px;" />
+                                <img src="assets/img/logo-oprah-alt.png" style="width: 88px; height: 96px;" />
                                 </div>
                             </div>
 
@@ -369,5 +370,26 @@ const render = (tipo, data) => {
                 </section>
             `;
             break;
+        case 'trabajo':
+            const trabajos = `
+                <div class="container-md" style="max-width: 960px; padding: 0; width: 100%; height: 300px; object-fit: contain; object-position: center;">
+                    <img src="assets/img/${data.imagen}" alt="${data.nombre}" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+                </div>
+                <div class="container-md" style="max-width: 960px;">
+                    <h5 style="margin-top: 3rem;"><i>${data.fecha}</i></h5>
+                    <h3 class="titulo" style="margin-top: 2rem; font-family: NewYork; font-size: 70px; line-height: 68px;">${data.nombre}</h3>
+                    <h4 style="margin-top: 1rem;">${data.detalle}</h4>
+                    <p style="margin-top: 3rem;">${data.descripcion}</p>
+
+                    <p style="margin-top: 5rem; text-align: center;"><i>Compartilo</i></p>
+                    <div class="sharethis-inline-share-buttons"></div>
+                </div>
+            `;
+            return `
+                <section id="trabajos" style="padding-bottom: 5rem;">
+                    ${trabajos}
+                </section>
+            `;
+                break;
     }
 }
